@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   width: auto;
   height: 100%;
   align-items: center;
+  padding: 1rem;
   justify-content: center;
   flex-direction: column;
   color: rgb(46, 48, 145);
@@ -25,8 +26,8 @@ const ContactCtn = styled.div`
   flex-direction: row;
   width: 100%;
   height: 100%;
-  gap: 1rem;
-  justify-content: space-evenly;
+  gap: 2rem;
+  justify-content: center;
   align-items: center;
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -52,31 +53,35 @@ const ContactItem = styled.div`
   flex-direction: column;
   text-align: center;
   align-items: center;
+  border: 1px solid black;
   justify-content: center;
   word-wrap: break-word;
   padding: 10%;
-  width: 33%;
+  max-width: 33%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   p {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    word-wrap: break-word;
+    white-space: nowrap;;
     @media (max-width: 800px) {
       font-size: 12px;
     }
   }
   h2{
     white-space: nowrap;
-
+    @media (max-width: 800px) {
+      font-size: 1.1rem;;
+    }
   }
   ${ContactItemInnerCtn} {
     display: flex;
-    gap: 1rem;
+    gap: .8rem;
     align-items: center;
+    text-align: left;
     white-space: nowrap;
-
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: center;
+    width: 80%;
     @media (max-width: 800px) {
       font-size: 12px;
       gap: 0.4rem;
