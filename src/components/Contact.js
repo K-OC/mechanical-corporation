@@ -11,14 +11,12 @@ const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   color: rgb(46, 48, 145);
-
 `;
 const Heading = styled.h1`
   color: rgb(46, 48, 145);
   font-weight: bold;
   font-size: 40px;
   white-space: nowrap;
-
 `;
 
 const ContactCtn = styled.div`
@@ -36,13 +34,15 @@ const ContactCtn = styled.div`
 const ContactItemInnerCtn = styled.div``;
 
 const ContactLink = styled.a`
+display: flex;
+align-items: center;
+justify-content: center;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   color: rgb(46, 48, 145);
-  width: 100%;
   @media (max-width: 800px) {
     font-size: 12px;
   }
@@ -53,40 +53,44 @@ const ContactItem = styled.div`
   flex-direction: column;
   text-align: center;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   justify-content: center;
   word-wrap: break-word;
-  padding: 10%;
-  max-width: 33%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   p {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    white-space: nowrap;;
+    white-space: nowrap;
     @media (max-width: 800px) {
       font-size: 12px;
     }
   }
-  h2{
+  h2 {
     white-space: nowrap;
+    padding: 4px;
     @media (max-width: 800px) {
-      font-size: 1.1rem;;
+      font-size: 1.1rem;
     }
   }
   ${ContactItemInnerCtn} {
     display: flex;
-    gap: .8rem;
+    gap: 0.8rem;
     align-items: center;
     text-align: left;
     white-space: nowrap;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     @media (max-width: 800px) {
       font-size: 12px;
       gap: 0.4rem;
     }
+    ${ContactLink} {
+   padding: 10px;
+    }
+
   }
+
 `;
 
 const Contact = () => {

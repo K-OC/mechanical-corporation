@@ -13,8 +13,8 @@ const Logo = styled.img`
   display: block;
   max-width: 20rem;
   max-height: 10rem;
-  width: auto;
-  height: auto;
+  width: 9.5rem;
+  height: 5rem;
   padding: 4px;
 `;
 const HeaderItemCtn = styled.div`
@@ -23,10 +23,9 @@ const HeaderItemCtn = styled.div`
 `;
 
 const NavbarLink = styled(Link)`
-text-decoration: none;
-color: #fff;
-
-`
+  text-decoration: none;
+  color: #fff;
+`;
 
 const HeaderItem = styled.button`
   height: fit-content;
@@ -34,17 +33,18 @@ const HeaderItem = styled.button`
   background-color: transparent;
   font-size: 16px;
   color: #fff;
+  margin-right: 1rem;
 `;
 
 const Header = () => {
   return (
     <Wrapper>
-      <Logo src="./assets/bmechlogo.png" />
+      <Link to="/" exact>
+        <Logo src="./assets/bmechlogo.png" />
+      </Link>
       <HeaderItemCtn>
         <HeaderItem>
-          <NavbarLink to="contact">
-            Contact
-          </NavbarLink>
+          <NavbarLink to="contact">Contact</NavbarLink>
         </HeaderItem>
         <HeaderItem>Products</HeaderItem>
         <HeaderItem>Services</HeaderItem>
