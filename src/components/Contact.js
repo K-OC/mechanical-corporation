@@ -7,20 +7,22 @@ const Wrapper = styled.div`
   width: 100%;
   max-height: 100%;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 10rem;
   flex-direction: column;
   color: rgb(46, 48, 145);
-  margin-bottom: 10rem;
 `;
 const Heading = styled.h1`
   color: rgb(46, 48, 145);
   background-color: #fff;
   padding: .6rem 1rem;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.4rem;
   margin-right: 10px;
   white-space: nowrap;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  @media(max-width: 700px){
+    font-size: 1.9rem;
+  }
 `;
 
 const ContactCtn = styled.div`
@@ -28,7 +30,7 @@ const ContactCtn = styled.div`
   flex-direction: row;
   width: 100%;
   height: 100%;
-  gap: 1rem;
+  gap: .9rem;
   justify-content: center;
   align-items: center;
   @media (max-width: 1000px) {
@@ -74,6 +76,7 @@ const ContactItem = styled.div`
     line-height: .5rem;
     @media (max-width: 800px) {
       font-size: 12px;
+      line-height: .3rem;
     }
   }
   h2 {

@@ -111,7 +111,7 @@ const Home = () => {
             alt="half a yellow gear on a blue background"
           />
         </OptionsItem>
-        <OptionsItem>
+        <OptionsItem to="/contact">
           {" "}
           <p>Contact</p>
           <img

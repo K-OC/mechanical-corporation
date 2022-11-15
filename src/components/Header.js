@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   height: 5.5rem;
   justify-content: space-between;
   align-items: center;
+
 `;
 
 const Logo = styled.img`

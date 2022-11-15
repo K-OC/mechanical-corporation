@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   height: 100%;
   background: url(${gearphoto});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
 `;
 
