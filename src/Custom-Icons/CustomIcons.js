@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Email } from "./email-svgrepo-com.svg";
 import { ReactComponent as Phone } from "./phone-call-svgrepo-com.svg";
+import { ReactComponent as Gear } from "./gear.svg";
 
 export const StyledPhone = styled(Phone)`
   height: 2rem;
@@ -17,3 +18,8 @@ export const StyledEmail = styled(Email)`
   min-height: 1rem;
   min-width: 1rem;
 `;
+
+export const StyledGear = styled(Gear)`
+max-height: 2rem;
+min-width: 2rem;
+`

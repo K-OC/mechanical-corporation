@@ -43,12 +43,16 @@ const OptionsItem = styled(Link)`
   p {
     color: #fff;
     font-size: 1.8rem;
+    margin-bottom: 1rem;
     position: absolute;
     font-weight: bold;
     color: rgb(6, 68, 147);
     text-align: center;
-    @media(max-width: 700px) {
+    @media(max-width: 8px) {
       font-size: 1.2rem;
+  }
+  @media(max-width: 400px) {
+      font-size: .8rem;
   }
   }
   @media(max-width: 700px) {
@@ -58,7 +62,7 @@ const OptionsItem = styled(Link)`
   }
   img {
     box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
-    @media(max-width: 700px) {
+    @media(max-width: 900px) {
       max-width: 100%;
   }
   }
@@ -68,7 +72,7 @@ const OptionsCtn = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
   height:auto;
   gap: 1rem;
   justify-content: center;
@@ -103,7 +107,7 @@ const Home = () => {
             alt="half a yellow gear on a blue background"
           />
         </OptionsItem>
-        <OptionsItem>
+        <OptionsItem to="/about-us">
           {" "}
           <p>About us</p>
           <img

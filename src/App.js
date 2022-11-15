@@ -5,6 +5,7 @@ import GlobalStyle from "./globalStyles";
 import Header from "./components/Header";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
+import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import gearphoto from "./assets/gearphoto.png";
 const Wrapper = styled.div`
@@ -32,6 +33,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="about-us" element={<AboutUs />} />
         </Routes>
       </Wrapper>
       <Footer />
