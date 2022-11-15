@@ -4,19 +4,23 @@ import { StyledEmail, StyledPhone } from "../Custom-Icons/CustomIcons";
 
 const Wrapper = styled.div`
   display: flex;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  max-height: 100%;
   align-items: center;
-  padding: 1rem;
   justify-content: center;
   flex-direction: column;
   color: rgb(46, 48, 145);
+  margin-bottom: 10rem;
 `;
 const Heading = styled.h1`
   color: rgb(46, 48, 145);
+  background-color: #fff;
+  padding: .6rem 1rem;
   font-weight: bold;
   font-size: 40px;
+  margin-right: 10px;
   white-space: nowrap;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 const ContactCtn = styled.div`
@@ -24,7 +28,7 @@ const ContactCtn = styled.div`
   flex-direction: row;
   width: 100%;
   height: 100%;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   @media (max-width: 1000px) {
@@ -53,27 +57,27 @@ const ContactItem = styled.div`
   flex-direction: column;
   text-align: center;
   align-items: center;
-  /* border: 1px solid black; */
+  background-color: #fff;
   max-width: 100%;
   width: 33%;
   justify-content: center;
   word-wrap: break-word;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   @media (max-width: 1000px) {
-    width: 80%;
+    width: 70%;
   }
   p {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     white-space: nowrap;
+    line-height: .5rem;
     @media (max-width: 800px) {
       font-size: 12px;
     }
   }
   h2 {
     white-space: nowrap;
-    padding: 4px;
     @media (max-width: 800px) {
       font-size: 1.1rem;
     }
@@ -101,7 +105,7 @@ const ContactItem = styled.div`
 const Contact = () => {
   return (
     <Wrapper>
-      <Heading>Contact Us</Heading>
+      <Heading>Get in touch</Heading>
       <ContactCtn>
         <ContactItem>
           <h2>John (Jack) Galvine</h2>

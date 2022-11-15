@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: flex;
-  width: 100vw;
+  position: fixed;
+  width: 100%;
   background-color: rgb(46, 48, 145);
   height: 5.5rem;
   justify-content: space-between;
@@ -35,17 +36,17 @@ const HeaderItem = styled.button`
   height: fit-content;
   border: none;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   @media(max-width:380px){
-    font-size: 12px;
+    font-size: .8rem;
   }
 `;
 
 const Header = () => {
   return (
     <Wrapper>
-      <Link to="/" exact>
+      <Link to="/">
         <Logo src="./assets/bmechlogo.png" />
       </Link>
       <HeaderItemCtn>
