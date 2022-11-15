@@ -54,9 +54,14 @@ const ContactItem = styled.div`
   text-align: center;
   align-items: center;
   /* border: 1px solid black; */
+  max-width: 100%;
+  width: 33%;
   justify-content: center;
   word-wrap: break-word;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  @media (max-width: 1000px) {
+    width: 80%;
+  }
   p {
     font-size: 16px;
     font-weight: bold;
