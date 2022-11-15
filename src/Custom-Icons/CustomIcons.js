@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { ReactComponent as Email } from "./email-svgrepo-com.svg";
 import { ReactComponent as Phone } from "./phone-call-svgrepo-com.svg";
