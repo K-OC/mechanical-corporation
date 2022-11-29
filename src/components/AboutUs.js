@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { StyledGear } from "../Custom-Icons/CustomIcons";
 
@@ -15,16 +15,16 @@ const Wrapper = styled.div`
 `;
 
 const CardCtn = styled.div`
-display: flex;
-flex-direction: column;
-overflow-y: hidden;
-gap: .2rem;
-@media(max-width: 700px){
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  width: 100%;
+  gap: 0.2rem;
+  @media (max-width: 700px) {
     min-height: 70rem;
     overflow-y: scroll;
     scroll-behavior: smooth;
-
-}
+  }
 `;
 const ContentCard = styled.div`
   position: relative;
@@ -65,6 +65,7 @@ const ContentCardParaCtn = styled.div`
     color: yellow;
     width: 80%;
   }
+  display: ${(props) => (props.open ? "" : "none")};
 `;
 
 const ContentCardPara = styled.p`
@@ -73,15 +74,30 @@ const ContentCardPara = styled.p`
   max-width: 80%;
 `;
 const AboutUs = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedKey, setSelectedKey] = useState({ value: "" });
+
+  const handleSectionOpen = () => {
+    setIsOpen(!isOpen);
+    console.log(selectedKey);
+  };
+
   return (
     <Wrapper>
       <CardCtn>
-        <ContentCard>
+        <ContentCard
+          onClick={() => {
+            setSelectedKey({ value: "mission" });
+            handleSectionOpen();
+          }}
+        >
           <ContentTitleCtn>
             <StyledGear />
             <ContentCardTitle>Mission</ContentCardTitle>
           </ContentTitleCtn>
-          <ContentCardParaCtn>
+          <ContentCardParaCtn
+            open={isOpen && selectedKey.value === "mission" ? true : false}
+          >
             <ContentCardPara>
               Beothuk Mechanical Corporation [BMC] is committed to providing our
               clients with professional quality machining and welding services
@@ -100,12 +116,19 @@ const AboutUs = () => {
             </ContentCardPara>
           </ContentCardParaCtn>
         </ContentCard>
-        <ContentCard>
+        <ContentCard
+          onClick={() => {
+            setSelectedKey({ value: "values" });
+            handleSectionOpen();
+          }}
+        >
           <ContentTitleCtn>
             <StyledGear />
             <ContentCardTitle>Our Values</ContentCardTitle>
           </ContentTitleCtn>
-          <ContentCardParaCtn>
+          <ContentCardParaCtn
+            open={isOpen && selectedKey.value === "values" ? true : false}
+          >
             <ContentCardPara>
               Beothuk Mechanical Corporation core values guide and empower our
               inclusive and diverse team as we perform sage, ethical and
@@ -121,12 +144,19 @@ const AboutUs = () => {
             </ul>
           </ContentCardParaCtn>
         </ContentCard>
-        <ContentCard>
+        <ContentCard
+          onClick={() => {
+            setSelectedKey({ value: "vision" });
+            handleSectionOpen();
+          }}
+        >
           <ContentTitleCtn>
             <StyledGear />
             <ContentCardTitle>Vision</ContentCardTitle>
           </ContentTitleCtn>
-          <ContentCardParaCtn>
+          <ContentCardParaCtn
+            open={isOpen && selectedKey.value === "vision" ? true : false}
+          >
             <ContentCardPara>
               To be the leader of the machining, welding, and fabrication
               contracting and service industries through the uitlization of
