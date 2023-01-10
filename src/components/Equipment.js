@@ -4,7 +4,10 @@ import Brake from "../assets/250-ton-brake.png";
 import BitSharpener from "../assets/IMG_1511.jpg";
 import LineBoringTool from "../assets/IMG_1510.jpg";
 import ShearMachine from "../assets/IMG-6737.jpg";
-
+import universalMillingMachine from "../assets/universal-milling-machine.png";
+import hydraulicBendingRolls from "../assets/IMG-6771.jpg";
+import lathe from "../assets/IMG-6755.jpg";
+import turningCenter from "../assets/IMG-6773.jpg";
 const Wrapper = styled.div`
   max-width: 100%;
   overflow-y: auto;
@@ -13,6 +16,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 380px) {
+    height: calc(100% - 3.1rem);
+  }
 `;
 
 const InnerCtn = styled.div`
@@ -22,7 +28,7 @@ const InnerCtn = styled.div`
   overflow-y: scroll;
   width: 80%;
   height: 100%;
-
+  gap: 1rem;
   background-color: rgb(46, 48, 145);
   @media (max-width: 1200px) {
     width: 100%;
@@ -33,8 +39,7 @@ const Title = styled.h2`
   color: yellow;
   margin: 2rem;
   font-size: 2rem;
-  max-width: 50%;
-  white-space: nowrap;
+  max-width: 40%;
   max-height: fit-content;
   @media (max-width: 1200px) {
     font-size: 1rem;
@@ -46,15 +51,17 @@ const InnerEquipmentCtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 90%;
   width: 90%;
   height: auto;
+  border: 1px solid yellow;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   flex-shrink: 2;
   ${Title} {
   }
   ${Img} {
     float: left;
     width: 50%;
-    height: 100%;
     object-fit: cover;
   }
 `;
@@ -71,13 +78,30 @@ const Equipment = () => {
           <Img src={`${BitSharpener}`} />
           <Title>Bit Sharpener</Title>
         </InnerEquipmentCtn>
-        <InnerEquipmentCtn style={{ paddingRight: "1rem" }}>
+        <InnerEquipmentCtn>
           <Title>Line Boring Tool</Title>
           <Img src={`${LineBoringTool}`} />
         </InnerEquipmentCtn>
         <InnerEquipmentCtn>
           <Img src={`${ShearMachine}`} />
           <Title>LVD Shear Machine</Title>
+        </InnerEquipmentCtn>
+        <InnerEquipmentCtn>
+          <Title>Universal Milling Machine</Title>
+          <Img src={`${universalMillingMachine}`} />
+        </InnerEquipmentCtn>
+        <InnerEquipmentCtn>
+          <Img src={`${hydraulicBendingRolls}`} />
+          <Title>Hydraulic Bending Rolls</Title>
+        </InnerEquipmentCtn>
+        <InnerEquipmentCtn>
+          <Title>Lathe</Title>
+
+          <Img src={`${lathe}`} />
+        </InnerEquipmentCtn>
+        <InnerEquipmentCtn>
+          <Img src={`${turningCenter}`} />
+          <Title>turning Center</Title>
         </InnerEquipmentCtn>
       </InnerCtn>
     </Wrapper>
