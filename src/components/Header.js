@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   height: 5.5rem;
   justify-content: space-between;
   align-items: center;
-
 `;
 
 const Logo = styled.img`
@@ -19,7 +18,7 @@ const Logo = styled.img`
   width: auto;
   height: 5rem;
   padding: 4px;
-  @media(max-width:380px){
+  @media (max-width: 380px) {
     height: 3.1rem;
   }
 `;
@@ -39,8 +38,8 @@ const HeaderItem = styled.button`
   background-color: transparent;
   font-size: 1rem;
   color: #fff;
-  @media(max-width:380px){
-    font-size: .8rem;
+  @media (max-width: 380px) {
+    font-size: 0.8rem;
   }
 `;
 

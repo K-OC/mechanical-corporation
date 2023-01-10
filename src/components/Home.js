@@ -23,7 +23,7 @@ const TextCtn = styled.div`
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   opacity: 0.9;
   white-space: wrap;
   h3 {
@@ -48,34 +48,35 @@ const OptionsItem = styled(Link)`
     font-weight: bold;
     color: rgb(6, 68, 147);
     text-align: center;
-    
-    @media(max-width: 8px) {
+
+    @media (max-width: 8px) {
       font-size: 1.2rem;
+    }
+    @media (max-width: 400px) {
+      font-size: 0.8rem;
+    }
   }
-  @media(max-width: 400px) {
-      font-size: .8rem;
-  }
-  }
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
   }
   &:hover {
     transform: scale(1.02);
   }
   img {
     box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
-    @media(max-width: 900px) {
+    @media (max-width: 900px) {
       max-width: 100%;
-  }
+    }
   }
 `;
 
 const OptionsCtn = styled.div`
   display: flex;
   flex-direction: row;
+
   flex-wrap: wrap;
   width: 80%;
   gap: 1rem;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: top;
 `;
 
