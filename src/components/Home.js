@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   gap: 2rem;
+  justify-content: top;
   align-items: center;
 `;
 
@@ -22,7 +23,7 @@ const TextCtn = styled.div`
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: .5rem;
   opacity: 0.9;
   white-space: wrap;
   h3 {
@@ -37,17 +38,17 @@ const OptionsItem = styled(Link)`
   position: relative;
   align-items: center;
   background-color: transparent;
-  max-width: 40%;
+  max-width: 33%;
   text-decoration: none;
   justify-content: center;
   p {
-    color: #fff;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-top: 30%;
     position: absolute;
     font-weight: bold;
     color: rgb(6, 68, 147);
     text-align: center;
+    
     @media(max-width: 8px) {
       font-size: 1.2rem;
   }
@@ -73,11 +74,9 @@ const OptionsCtn = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   width: 80%;
-  height:auto;
   gap: 1rem;
   justify-content: center;
-  align-items: center;
-
+  align-items: top;
 `;
 
 const Home = () => {
@@ -99,7 +98,7 @@ const Home = () => {
             alt="half a yellow gear on a blue background"
           />
         </OptionsItem>
-        <OptionsItem>
+        <OptionsItem to="/equipment">
           {" "}
           <p>Equipment</p>
           <img

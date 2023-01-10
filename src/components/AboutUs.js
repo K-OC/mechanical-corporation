@@ -28,6 +28,7 @@ const CardCtn = styled.div`
 `;
 const ContentCard = styled.div`
   position: relative;
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -40,7 +41,6 @@ const ContentCard = styled.div`
     fill: rgb(255, 242, 0);
   }
   @media (max-width: 700px) {
-    flex-direction: column;
   }
 `;
 
@@ -78,8 +78,7 @@ const AboutUs = () => {
   const [selectedKey, setSelectedKey] = useState({ value: "" });
 
   const handleSectionOpen = () => {
-    setIsOpen(!isOpen);
-    console.log(selectedKey);
+    setIsOpen(selectedKey);
   };
 
   return (

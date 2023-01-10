@@ -8,11 +8,12 @@ import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import gearphoto from "./assets/gearphoto.png";
+import Equipment from "./components/Equipment";
 const Wrapper = styled.div`
   display: flex;
   top: 5.5rem;
   position: fixed;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   background-color: #fff;
   overflow-x: hidden;
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="about-us" element={<AboutUs />} />
+          <Route path="equipment" element={<Equipment/>}/>
         </Routes>
       </Wrapper>
       <Footer />
