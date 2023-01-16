@@ -91,7 +91,7 @@ const Home = () => {
         </h3>
       </TextCtn>
       <OptionsCtn>
-        <OptionsItem>
+        <OptionsItem to="/services">
           {" "}
           <p>Services</p>
           <img

@@ -9,6 +9,7 @@ import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import gearphoto from "./assets/gearphoto.png";
 import Equipment from "./components/Equipment";
+import Services from "./components/Services";
 const Wrapper = styled.div`
   display: flex;
   top: 5.5rem;
@@ -36,6 +37,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="about-us" element={<AboutUs />} />
           <Route path="equipment" element={<Equipment />} />
+          <Route path="services" element={<Services />} />
         </Routes>
       </Wrapper>
       <Footer />
