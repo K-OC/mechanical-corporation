@@ -8,6 +8,7 @@ import universalMillingMachine from "../assets/universal-milling-machine.png";
 import hydraulicBendingRolls from "../assets/IMG-6771.jpg";
 import lathe from "../assets/IMG-6755.jpg";
 import turningCenter from "../assets/IMG-6773.jpg";
+import radialDrill from "../assets/radial-drill.jpg";
 const Wrapper = styled.div`
   max-width: 100%;
   overflow-y: auto;
@@ -17,7 +18,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   @media (max-width: 380px) {
-    height: calc(100% - 3.1rem);
+    height: calc(100% - 6rem);
   }
 `;
 
@@ -25,11 +26,11 @@ const InnerCtn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
   overflow-y: scroll;
-  width: 80%;
+  width: 50%;
   height: 100%;
   gap: 1rem;
-  background-color: rgb(46, 48, 145);
   @media (max-width: 1200px) {
     width: 100%;
     margin: 0;
@@ -50,11 +51,12 @@ const Img = styled.img``;
 const InnerEquipmentCtn = styled.div`
   display: flex;
   align-items: center;
+  background-color: rgb(46, 48, 145);
   justify-content: space-between;
   max-width: 90%;
   width: 90%;
   height: auto;
-  border: 1px solid yellow;
+  border: 1px solid rgb(46, 48, 145);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   flex-shrink: 2;
   ${Title} {
@@ -70,6 +72,7 @@ const Equipment = () => {
   return (
     <Wrapper>
       <InnerCtn>
+        <Title style={{ color: "rgb(46, 48, 145)" }}>Equipment</Title>
         <InnerEquipmentCtn>
           <Title>250 Ton Brake</Title>
           <Img src={`${Brake}`} />
@@ -101,7 +104,11 @@ const Equipment = () => {
         </InnerEquipmentCtn>
         <InnerEquipmentCtn>
           <Img src={`${turningCenter}`} />
-          <Title>turning Center</Title>
+          <Title>Turning Center</Title>
+        </InnerEquipmentCtn>
+        <InnerEquipmentCtn>
+          <Title>Radial Drill</Title>
+          <Img src={`${radialDrill}`} />
         </InnerEquipmentCtn>
       </InnerCtn>
     </Wrapper>

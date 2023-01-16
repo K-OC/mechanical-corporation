@@ -50,7 +50,9 @@ const Header = () => {
         <Logo src="./assets/bmechlogo.png" />
       </Link>
       <HeaderItemCtn>
-        <HeaderItem>Equipment</HeaderItem>
+        <HeaderItem>
+          <NavbarLink to="equipment">Equipment</NavbarLink>
+        </HeaderItem>
         <HeaderItem>Services</HeaderItem>
         <HeaderItem>
           <NavbarLink to="contact">Contact</NavbarLink>
