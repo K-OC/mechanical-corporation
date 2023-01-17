@@ -53,7 +53,9 @@ const Header = () => {
         <HeaderItem>
           <NavbarLink to="equipment">Equipment</NavbarLink>
         </HeaderItem>
-        <HeaderItem>Services</HeaderItem>
+        <HeaderItem>
+          <NavbarLink to="services">Services</NavbarLink>
+        </HeaderItem>
         <HeaderItem>
           <NavbarLink to="contact">Contact</NavbarLink>
         </HeaderItem>

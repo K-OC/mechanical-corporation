@@ -65,6 +65,7 @@ const InnerEquipmentCtn = styled.div`
     float: left;
     width: 50%;
     object-fit: cover;
+    margin: 1rem;
   }
 `;
 
