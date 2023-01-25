@@ -4,16 +4,16 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  overflow-y: scroll;
-  overflow-x: hidden;
   max-width: 100%;
+  overflow-y: scroll;
   width: 70%;
+  overflow-x: hidden;
   height: 70%;
   display: flex;
   align-items: center;
   @media (max-width: 380px) {
     height: calc(100% - 6rem);
+    width: 100%;
   }
 `;
 const PageTitle = styled.h2`
@@ -28,12 +28,12 @@ const InnerCtn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
   jusitify-content: center;
   overflow-wrap: break-word;
   flex-wrap: wrap;
-  width: 60%;
+  width: 100%;
   max-width: 100%;
-  background-color: transparent;
   padding: 1rem;
   @media (max-width: 1200px) {
     width: 100%;
