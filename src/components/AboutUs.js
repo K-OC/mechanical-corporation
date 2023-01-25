@@ -4,9 +4,7 @@ import { StyledGear } from "../Custom-Icons/CustomIcons";
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100%;
   max-height: 100%;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,12 +16,12 @@ const CardCtn = styled.div`
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
-  width: 100%;
+  width: 70%;
   gap: 0.2rem;
   @media (max-width: 700px) {
     min-height: 70rem;
-    overflow-y: scroll;
     scroll-behavior: smooth;
+    width: 100%;
   }
 `;
 const ContentCard = styled.div`

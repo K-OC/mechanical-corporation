@@ -100,7 +100,6 @@ const Equipment = () => {
         </InnerEquipmentCtn>
         <InnerEquipmentCtn>
           <Title>Lathe</Title>
-
           <Img src={`${lathe}`} />
         </InnerEquipmentCtn>
         <InnerEquipmentCtn>
