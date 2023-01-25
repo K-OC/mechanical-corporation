@@ -73,7 +73,7 @@ const Equipment = () => {
   return (
     <Wrapper>
       <InnerCtn>
-        <Title style={{ color: "rgb(46, 48, 145)" }}>Equipment</Title>
+        <Title style={{ color: "rgb(46, 48, 145)", fontSize: "2rem" }}>Equipment</Title>
         <InnerEquipmentCtn>
           <Title>250 Ton Brake</Title>
           <Img src={`${Brake}`} />
