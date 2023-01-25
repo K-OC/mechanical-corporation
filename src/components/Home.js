@@ -87,7 +87,7 @@ const Home = () => {
         <h3>
           Beothuk Mechanical Corporation, in Buchans, has an 8000 sq ft facility
           operating as a fully equipped machining, welding & fabrication shop
-          that specializes in custom machinin and fabrication production.
+          that specializes in custom machining and fabrication production.
         </h3>
       </TextCtn>
       <OptionsCtn>

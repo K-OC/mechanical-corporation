@@ -63,7 +63,7 @@ const ContactItem = styled.div`
   justify-content: center;
   word-wrap: break-word;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     width: 90%;
   }
   p {
