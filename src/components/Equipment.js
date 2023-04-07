@@ -42,14 +42,14 @@ const StyledGrid = styled(Grid)`
 `;
 
 const cardData = [
-  { title: "Bit Sharpener", image: BitSharpener },
-  { title: "Line Boring Tool", image: LineBoringTool },
-  { title: "Shear Machine", image: ShearMachine },
-  { title: "Universal Milling Machine", image: universalMillingMachine },
-  { title: "Hydraulic Bending Rolls", image: hydraulicBendingRolls },
-  { title: "Lathe", image: lathe },
-  { title: "Turning Center", image: turningCenter },
-  { title: "Radial Drill", image: radialDrill },
+  { title: "Bit Sharpener", image: BitSharpener, alt: "Image of Bit Sharpener" },
+  { title: "Line Boring Tool", image: LineBoringTool, alt: "Image of Line Boring Tool" },
+  { title: "Shear Machine", image: ShearMachine, alt: "Image of Shear Machine" },
+  { title: "Universal Milling Machine", image: universalMillingMachine, alt: "Image of Universal Milling Machine" },
+  { title: "Hydraulic Bending Rolls", image: hydraulicBendingRolls, alt: "Image of Hydraulic Bending Rolls" },
+  { title: "Lathe", image: lathe, alt: "Image of Lathe" },
+  { title: "Turning Center", image: turningCenter, alt: "Image of Turning Center" },
+  { title: "Radial Drill", image: radialDrill, alt: "Image of Radial Drill" },
 ];
 
 const Equipment = () => {
@@ -59,9 +59,9 @@ const Equipment = () => {
         {cardData.map((card, index) => (
           <Grid key={index} item xs={12} sm={6} md={4} lg={3} padding={0}>
             <StyledCard>
-              <StyledCardMedia image={card.image} />
+              <StyledCardMedia image={card.image} alt={card.alt}/>
               <CardContent>
-                <Typography variant="h6" component="h2" textAlign="center">
+                <Typography variant="h6" component="h2" textAlign="center" color="rgb(46, 48, 145)" fontWeight="bold">
                   {card.title}
                 </Typography>
               </CardContent>
