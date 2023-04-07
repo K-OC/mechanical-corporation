@@ -3,9 +3,6 @@ import {
   Card,
   CardContent,
   Grid,
-  List,
-  ListItem,
-  ListItemText,
   Typography,
 } from "@mui/material";
 import {
