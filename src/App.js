@@ -5,7 +5,7 @@ import GlobalStyle from "./globalStyles";
 import Header from "./components/Header";
 import Contacts2 from "./components/Contacts2";
 import Home from "./components/Home";
-import AboutUs from "./components/AboutUs";
+import AboutUs2 from "./components/AboutUs2";
 import Footer from "./components/Footer";
 import gearphoto from "./assets/gearphoto.png";
 import Equipment2 from "./components/Equipment2";
@@ -40,7 +40,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contacts2 />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/about-us" element={<AboutUs2 />} />
           <Route path="/equipment" element={<Equipment2 />} />
           <Route path="/services" element={<Services2 />} />
         </Routes>
