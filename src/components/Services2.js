@@ -117,9 +117,9 @@ const Services2 = () => {
                   sx={{
                     color: "rgb(46, 48, 145)",
                     fontWeight: "bold",
-                    whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
+                    maxWidth: "100%",
                     marginTop: "1rem",
                   }}
                 >
