@@ -1,0 +1,76 @@
+import { Grid, Card, CardMedia, CardContent, Typography } from "@mui/material";
+import styled from "styled-components";
+import BitSharpener from "../assets/IMG_1511.jpg";
+import LineBoringTool from "../assets/IMG_1510.jpg";
+import ShearMachine from "../assets/IMG-6737.jpg";
+import universalMillingMachine from "../assets/universal-milling-machine.png";
+import hydraulicBendingRolls from "../assets/IMG-6771.jpg";
+import lathe from "../assets/IMG-6755.jpg";
+import turningCenter from "../assets/IMG-6773.jpg";
+import radialDrill from "../assets/radial-drill.jpg";
+
+const StyledContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const StyledCard = styled(Card)`
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+  
+`;
+
+const StyledCardMedia = styled(CardMedia)`
+  height: 0;
+  padding-top: 56.25%; // 16:9 aspect ratio
+`;
+
+const StyledGrid = styled(Grid)`
+ && {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 960px) {
+    && {
+      spacing: 1;
+    }
+  }
+`;
+
+const cardData = [
+  { title: "Bit Sharpener", image: BitSharpener },
+  { title: "Line Boring Tool", image: LineBoringTool },
+  { title: "Shear Machine", image: ShearMachine },
+  { title: "Universal Milling Machine", image: universalMillingMachine },
+  { title: "Hydraulic Bending Rolls", image: hydraulicBendingRolls },
+  { title: "Lathe", image: lathe },
+  { title: "Turning Center", image: turningCenter },
+  { title: "Radial Drill", image: radialDrill },
+];
+
+const CardGrid = () => {
+  return (
+    <StyledContainer>
+      <StyledGrid container spacing={0.5} padding={0}  >
+        {cardData.map((card, index) => (
+          <Grid key={index} item xs={12} sm={6} md={4} lg={3} padding={0}>
+            <StyledCard>
+              <StyledCardMedia image={card.image} />
+              <CardContent>
+                <Typography variant="h6" component="h2" textAlign="center">
+                  {card.title}
+                </Typography>
+              </CardContent>
+            </StyledCard>
+          </Grid>
+        ))}
+      </StyledGrid>
+    </StyledContainer>
+  );
+};
+
+export default CardGrid;

@@ -1,32 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalStyle from "./globalStyles";
 import Header from "./components/Header";
-import Contact from "./components/Contact";
+import Contacts2 from "./components/Contacts2";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import gearphoto from "./assets/gearphoto.png";
-import Equipment from "./components/Equipment";
-import Services from "./components/Services";
+import Equipment2 from "./components/Equipment2";
+import Services2 from "./components/Services2";
+
 const Wrapper = styled.div`
-  display: flex;
   top: 5.5rem;
-  position: fixed;
-  align-items: top;
-  justify-content: center;
+  position: relative;
   background-color: #fff;
   overflow-x: hidden;
   width: 100%;
-  height: 100%;
+  min-height: calc(100vh - 5.5rem - 5.5rem); /* Subtract header and footer heights from viewport height */
   background: url(${gearphoto});
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+
 `;
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <GlobalStyle />
@@ -34,10 +39,10 @@ function App() {
       <Wrapper>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="equipment" element={<Equipment />} />
-          <Route path="services" element={<Services />} />
+          <Route path="/contact" element={<Contacts2 />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/equipment" element={<Equipment2 />} />
+          <Route path="/services" element={<Services2 />} />
         </Routes>
       </Wrapper>
       <Footer />
