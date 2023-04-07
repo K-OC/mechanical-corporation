@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: flex;
-  position: fixed;
+  position: relative;
   width: 100%;
   background-color: rgb(46, 48, 145);
   height: 5.5rem;

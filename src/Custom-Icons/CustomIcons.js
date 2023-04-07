@@ -13,6 +13,14 @@ import { ReactComponent as PickupTruck } from "./pickup-truck.svg";
 import { ReactComponent as PrecisionWelding } from "./precision-welding.svg";
 import { ReactComponent as Weld } from "./weld.svg";
 
+export const StyledLargeGear = styled(Gear)`
+  height: 5rem;
+  width: 5rem;
+  min-height: 1rem;
+  min-width: 1rem;
+  fill: rgb(46, 48, 145);
+`
+
 export const StyledBulletdozerExcavator = styled(BulldozerExcavator)`
   height: 3rem;
   width: 3rem;

@@ -12,7 +12,6 @@ import Equipment from "./components/Equipment";
 import Services from "./components/Services";
 
 const Wrapper = styled.div`
-  top: 5.5rem;
   position: relative;
   background-color: #fff;
   overflow-x: hidden;
