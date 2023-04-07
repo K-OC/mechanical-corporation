@@ -29,7 +29,7 @@ const CardCtn = styled("div")({
   width: "70%",
   gap: "0.2rem",
   "@media (max-width: 700px)": {
-    minHeight: "70rem",
+    // minHeight: "70rem",
     scrollBehavior: "smooth",
     width: "100%",
   },
