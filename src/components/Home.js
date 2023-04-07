@@ -114,7 +114,7 @@ const Home = () => {
             </Typography>
           </StyledCardContent>
         </StyledCard>
-        <StyledCard component={Link} to="/about">
+        <StyledCard component={Link} to="/about-us">
           <StyledCardMedia>
             <StyledLargeGear />
           </StyledCardMedia>
