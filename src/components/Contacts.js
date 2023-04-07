@@ -3,8 +3,7 @@ import { Card, CardContent, Typography, Link } from "@mui/material";
 import { StyledEmail, StyledPhone } from "../Custom-Icons/CustomIcons";
 import styled from "styled-components";
 
-const StyledCard = styled(Card)`
-`
+const StyledCard = styled(Card)``;
 
 const CardCtn = styled.div`
   display: flex;
@@ -17,13 +16,14 @@ const CardCtn = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-  ${StyledCard}{
-width: 50%;
-@media (max-width: 768px) {
-width: 100%;  
-}
+  ${StyledCard} {
+    width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
 `;
-const Contacts2 = () => {
+const Contacts = () => {
   return (
     <div
       style={{
@@ -161,4 +161,4 @@ const Contacts2 = () => {
   );
 };
 
-export default Contacts2;
+export default Contacts;

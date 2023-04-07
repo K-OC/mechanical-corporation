@@ -1,100 +1,105 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import { styled } from "@mui/material/styles";
 import { StyledGear } from "../Custom-Icons/CustomIcons";
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+  Box,
+  List,
+  ListItem,
+  ListItemText,
+} from "@mui/material";
 
-const Wrapper = styled.div`
-  width: 100%;
-  max-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5.5rem;
-  justify-content: start;
-`;
+const Wrapper = styled("div")({
+  width: "100%",
+  maxHeight: "100%",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  marginTop: "5.5rem",
+  justifyContent: "start",
+});
 
-const CardCtn = styled.div`
-  display: flex;
-  flex-direction: column;
-  overflow-y: hidden;
-  width: 70%;
-  gap: 0.2rem;
-  @media (max-width: 700px) {
-    min-height: 70rem;
-    scroll-behavior: smooth;
-    width: 100%;
-  }
-`;
-const ContentCard = styled.div`
-  position: relative;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  background-color: #fff;
-  gap: 0.5rem;
-  width: 100%;
-  background-color: rgb(46, 48, 145);
-  border-bottom: 1px solid rgb(255, 242, 0);
-  svg {
-    fill: rgb(255, 242, 0);
-  }
-  @media (max-width: 700px) {
-  }
-`;
+const CardCtn = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  overflowY: "hidden",
+  width: "70%",
+  gap: "0.2rem",
+  "@media (max-width: 700px)": {
+    // minHeight: "70rem",
+    scrollBehavior: "smooth",
+    width: "100%",
+  },
+});
 
-const ContentTitleCtn = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: left;
-`;
+const ContentCard = styled(Accordion)({
+  backgroundColor: "rgb(46, 48, 145)",
+  width: "100%",
+  borderBottom: "1px solid rgb(255, 242, 0)",
+  "&:last-child": {
+    borderBottom: "none",
+  },
+});
 
-const ContentCardTitle = styled.h2`
-  padding: 0.3rem;
-  text-align: center;
-  color: rgb(255, 242, 0);
-`;
+const ContentTitleCtn = styled(Box)({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "left",
+});
 
-const ContentCardParaCtn = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  ul {
-    color: yellow;
-    width: 80%;
-  }
-  display: ${(props) => (props.open ? "" : "none")};
-`;
+const ContentCardTitle = styled(Typography)({
+  padding: "0.3rem",
+  textAlign: "center",
+  fontWeight: "bold",
+  color: "rgb(255, 242, 0)",
+});
 
-const ContentCardPara = styled.p`
-  color: rgb(255, 242, 0);
-  text-align: left;
-  max-width: 80%;
-`;
+const ContentCardParaCtn = styled(AccordionDetails)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "start",
+  alignItems: "center",
+  background: "linear-gradient(to bottom, rgb(46, 48, 145), rgb(80, 83, 187, 0.5));",
+
+  ul: {
+    color: "yellow",
+    width: "80%",
+  },
+  "&.Mui-expanded": {
+    margin: "12px 0",
+  },
+}));
+
+const ContentCardPara = styled(Typography)({
+  color: "rgb(255, 242, 0)",
+  textAlign: "left",
+  fontWeight: "bold",
+  maxWidth: "80%",
+});
+
 const AboutUs = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedKey, setSelectedKey] = useState({ value: "" });
+  const [expanded, setExpanded] = useState("");
 
-  const handleSectionOpen = () => {
-    setIsOpen(selectedKey);
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : "");
   };
 
   return (
     <Wrapper>
       <CardCtn>
         <ContentCard
-          onClick={() => {
-            setSelectedKey({ value: "mission" });
-            handleSectionOpen();
-          }}
+          expanded={expanded === "mission"}
+          onChange={handleChange("mission")}
         >
-          <ContentTitleCtn>
-            <StyledGear />
-            <ContentCardTitle>Mission</ContentCardTitle>
-          </ContentTitleCtn>
-          <ContentCardParaCtn
-            open={isOpen && selectedKey.value === "mission" ? true : false}
-          >
+          <AccordionSummary expandIcon={<StyledGear fill="rgb(255, 242, 0)" />}>
+            <ContentTitleCtn>
+              <ContentCardTitle>Mission</ContentCardTitle>
+            </ContentTitleCtn>
+          </AccordionSummary>
+          <ContentCardParaCtn>
             <ContentCardPara>
               Beothuk Mechanical Corporation [BMC] is committed to providing our
               clients with professional quality machining and welding services
@@ -114,49 +119,50 @@ const AboutUs = () => {
           </ContentCardParaCtn>
         </ContentCard>
         <ContentCard
-          onClick={() => {
-            setSelectedKey({ value: "values" });
-            handleSectionOpen();
-          }}
+          expanded={expanded === "values"}
+          onChange={handleChange("values")}
         >
-          <ContentTitleCtn>
-            <StyledGear />
-            <ContentCardTitle>Our Values</ContentCardTitle>
-          </ContentTitleCtn>
-          <ContentCardParaCtn
-            open={isOpen && selectedKey.value === "values" ? true : false}
-          >
-            <ContentCardPara>
-              Beothuk Mechanical Corporation core values guide and empower our
-              inclusive and diverse team as we perform sage, ethical and
-              efficient work.
-            </ContentCardPara>
-
-            <ul>
-              <li>Professionalism</li>
-              <li>Safety</li>
-              <li>Integrity</li>
-              <li>Quality</li>
-              <li>Respect</li>
-            </ul>
+          <AccordionSummary expandIcon={<StyledGear fill="rgb(255, 242, 0)" />}>
+            <ContentTitleCtn>
+              <ContentCardTitle>Values</ContentCardTitle>
+            </ContentTitleCtn>
+          </AccordionSummary>
+          <ContentCardParaCtn>
+            <List>
+              <ListItem>
+                <ListItemText primary="Integrity" />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="Commitment to Excellence" />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="Safety" />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="Innovation" />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="Teamwork" />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="Community" />
+              </ListItem>
+            </List>
           </ContentCardParaCtn>
         </ContentCard>
         <ContentCard
-          onClick={() => {
-            setSelectedKey({ value: "vision" });
-            handleSectionOpen();
-          }}
+          expanded={expanded === "vision"}
+          onChange={handleChange("vision")}
         >
-          <ContentTitleCtn>
-            <StyledGear />
-            <ContentCardTitle>Vision</ContentCardTitle>
-          </ContentTitleCtn>
-          <ContentCardParaCtn
-            open={isOpen && selectedKey.value === "vision" ? true : false}
-          >
+          <AccordionSummary expandIcon={<StyledGear fill="rgb(255, 242, 0)" />}>
+            <ContentTitleCtn>
+              <ContentCardTitle>Vision</ContentCardTitle>
+            </ContentTitleCtn>
+          </AccordionSummary>
+          <ContentCardParaCtn>
             <ContentCardPara>
               To be the leader of the machining, welding, and fabrication
-              contracting and service industries through the uitlization of
+              contracting and service industries through the utilization of
               safety, training and specialized technology.
             </ContentCardPara>
           </ContentCardParaCtn>
@@ -165,5 +171,4 @@ const AboutUs = () => {
     </Wrapper>
   );
 };
-
 export default AboutUs;
