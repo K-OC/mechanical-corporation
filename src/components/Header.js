@@ -5,9 +5,11 @@ const Wrapper = styled.div`
   display: flex;
   position: relative;
   width: 100%;
+  max-width: 100%;
   background-color: rgb(46, 48, 145);
-  height: 5.5rem;
+  /* height: 5.5rem; */
   justify-content: space-between;
+  box-sizing: border-box;
   align-items: center;
 `;
 

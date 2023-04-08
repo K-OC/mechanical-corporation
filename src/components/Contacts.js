@@ -35,7 +35,7 @@ const Contacts = () => {
     >
       <Typography
         variant="h4"
-        style={{ color: "#2E3091", fontWeight: "bold", marginBottom: "1rem" }}
+        style={{width: "100%", textAlign:'center',  padding: '1rem', color: "#fff", fontWeight: "bold", marginBottom: "1rem", backgroundColor: "#2E3091" }}
       >
         Get in touch
       </Typography>

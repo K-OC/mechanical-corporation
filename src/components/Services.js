@@ -1,10 +1,4 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 import {
   StyledBulletdozerExcavator,
   StyledDrill,
@@ -25,7 +19,7 @@ const services = [
   },
   {
     name: "Bucket Rebuilds",
-    icon: <StyledBulletdozerExcavator /> ,
+    icon: <StyledBulletdozerExcavator />,
   },
   {
     name: "Drill Consumable Products",
@@ -53,7 +47,7 @@ const services = [
   },
   {
     name: "Precision Machining",
-    icon: <StyledMachinePressIndustry /> ,
+    icon: <StyledMachinePressIndustry />,
   },
   {
     name: "Truck Box Liners (Hardox)",
@@ -67,15 +61,8 @@ const services = [
 
 const Services = () => {
   return (
-    <Box sx={{ mb: 10 }}>
-      <Typography
-        variant="h5"
-        gutterBottom
-        textAlign="center"
-        color="rgb(46, 48, 145)"
-      >
-        Our Services
-      </Typography>
+    <Box sx={{ mb: 10, mt: 3 }}>
+  
       <Grid
         container
         spacing={1}

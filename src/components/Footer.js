@@ -4,12 +4,15 @@ import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   background-color: #fff;
   bottom: 0;
-  position: fixed;
+  position: relative;
   width: 100%;
+  max-width: 100%;
+ 
 `;
 const FooterItemCtn = styled.div`
   display: flex;
   justify-content: space-evenly;
+margin-top: .5rem;
 `;
 
 const StyledLink = styled(Link)`

@@ -9,14 +9,18 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 2rem 0rem 0rem;
+  max-width: 100%;
+  width: 100%;
+  
 `;
 
 const TextCtn = styled.div`
-  max-width: 800px;
+  max-width: 80%;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: rgb(46, 48, 145);
+  /* padding: 0 2rem; */
 `;
 
 const OptionsCtn = styled.div`
@@ -25,6 +29,7 @@ const OptionsCtn = styled.div`
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  max-width: 100%;
 `;
 
 const StyledCard = styled(Card)`
@@ -38,14 +43,15 @@ const StyledCard = styled(Card)`
   color: rgb(46, 48, 145);
   font-weight: bold;
   justify-content: center;
+  opacity: 0.9;
   align-items: center;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-out;
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   }
 `;
 

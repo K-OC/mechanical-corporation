@@ -18,7 +18,7 @@ const Wrapper = styled("div")({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  marginTop: "5.5rem",
+  marginTop: "2rem",
   justifyContent: "start",
 });
 
@@ -62,7 +62,8 @@ const ContentCardParaCtn = styled(AccordionDetails)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "start",
   alignItems: "center",
-  background: "linear-gradient(to bottom, rgb(46, 48, 145), rgb(80, 83, 187, 0.5));",
+  background:
+    "linear-gradient(to bottom, rgb(46, 48, 145), rgb(80, 83, 187, 0.5));",
 
   ul: {
     color: "yellow",
@@ -89,6 +90,20 @@ const AboutUs = () => {
 
   return (
     <Wrapper>
+      <Typography
+        variant="h4"
+        style={{
+          width: "100%",
+          textAlign: "center",
+          padding: "1rem",
+          color: "#fff",
+          fontWeight: "bold",
+          marginBottom: "1rem",
+          backgroundColor: "#2E3091",
+        }}
+      >
+        About Us{" "}
+      </Typography>
       <CardCtn>
         <ContentCard
           expanded={expanded === "mission"}
