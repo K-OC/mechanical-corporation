@@ -56,7 +56,7 @@ const Contacts = () => {
                 variant="h5"
                 style={{ fontWeight: "bold", marginBottom: "0.5rem" }}
               >
-                John (Jack) Galvine
+                John (Jack) Glavine
               </Typography>
               <Typography variant="body1" style={{ fontWeight: "bold" }}>
                 BMC President
