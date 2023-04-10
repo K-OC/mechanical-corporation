@@ -81,6 +81,7 @@ const Services = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                opacity: "0.9",
                 justifyContent: "center",
                 boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.1)",
                 height: "100%",

@@ -151,7 +151,7 @@ const Contacts = () => {
                 }}
               >
                 <StyledPhone style={{ marginRight: "0.5rem" }} />
-                709-672-3080
+                709-572-0308
               </Link>
             </div>
           </CardContent>
