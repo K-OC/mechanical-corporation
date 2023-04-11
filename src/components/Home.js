@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 const TextCtn = styled.div`
   max-width: 80%;
   text-align: center;
+  font-weight: bold;
   margin-bottom: 1rem;
   color: rgb(46, 48, 145);
   /* padding: 0 2rem; */
@@ -57,7 +58,7 @@ const StyledCard = styled(Card)`
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, background-color .3s ease-out;
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
