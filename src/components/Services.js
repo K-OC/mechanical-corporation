@@ -10,17 +10,19 @@ import {
   StyledMachinePressIndustry,
   StyledSeaCan,
   StyledDrillConsummable,
-  StyledStorage,StyledDrillRig
+  StyledStorage,
+  StyledDrillRig,
 } from "../Custom-Icons/CustomIcons";
 
 const services = [
   {
     name: "Bit sharpening",
     icon: <StyledDrill />,
-  }, {
+  },
+  {
     name: "Welding and Fabrication",
     icon: <StyledWeld />,
-  }, 
+  },
   {
     name: "Bucket Rebuilds",
     icon: <StyledBulletdozerExcavator />,
@@ -31,12 +33,13 @@ const services = [
   },
   {
     name: "Drill Hammer Rebuilds",
-    icon: <StyledDrillRig/>
+    icon: <StyledDrillRig />,
   },
   {
     name: "Hydraulic Hoses & Fittings",
     icon: <StyledHydraulicEnergy />,
-  },{
+  },
+  {
     name: "Sea Can Modifications",
     icon: <StyledSeaCan />,
   },
@@ -60,16 +63,15 @@ const services = [
     name: "Truck Box Liners (Hardox)",
     icon: <StyledPickupTruck />,
   },
- {
+  {
     name: "Indoor / Outdoor Storage",
-    icon: <StyledStorage/>,
+    icon: <StyledStorage />,
   },
 ];
 
 const Services = () => {
   return (
     <Box sx={{ mb: 10, mt: 3 }}>
-  
       <Grid
         container
         spacing={1}

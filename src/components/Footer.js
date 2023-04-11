@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 const Wrapper = styled.div`
-  background-color: #fff;
+  background-color: #FFFAF0;
   bottom: 0;
   position: relative;
   width: 100%;

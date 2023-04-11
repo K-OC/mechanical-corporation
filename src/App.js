@@ -14,12 +14,12 @@ import './App.css';
 
 const Wrapper = styled.div`
   position: relative;
-  background-color: #fff;
   width: 100%;
   min-height: calc(100vh - 5.5rem ); /* Subtract header and footer heights from viewport height */
   background: url(${gearphoto});
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color:	#FFFAF0;
   background-position: bottom;
   overflow-x: hidden;
 padding-bottom: 1rem;

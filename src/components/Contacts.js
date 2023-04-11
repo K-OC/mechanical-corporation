@@ -40,7 +40,7 @@ const Contacts = () => {
           width: "100%",
           textAlign: "center",
           padding: "1rem",
-          color: "#fff",
+          color: "#FFFAF0",
           fontWeight: "bold",
           marginBottom: "1rem",
           backgroundColor: "#2E3091",

@@ -31,7 +31,7 @@ const HeaderItemCtn = styled.div`
 
 const NavbarLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: #fffaf0;
 `;
 
 const HeaderItem = styled.button`
@@ -39,7 +39,7 @@ const HeaderItem = styled.button`
   border: none;
   background-color: transparent;
   font-size: 1rem;
-  color: #fff;
+  color: #fffaf0;
   @media (max-width: 380px) {
     font-size: 0.8rem;
   }

@@ -21,7 +21,7 @@ export const StyledStorage = styled(Storage)`
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
-  stroke: #fff;
+  stroke: #FFFAF0;
 `;
 
 export const StyledDrillRig = styled(DrillRig)`
@@ -30,7 +30,7 @@ export const StyledDrillRig = styled(DrillRig)`
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
-  stroke: #fff;
+  stroke: #FFFAF0;
 `;
 
 export const StyledDrillConsummable = styled(DrillConsummable)`
@@ -39,7 +39,7 @@ export const StyledDrillConsummable = styled(DrillConsummable)`
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
-  stroke: #fff;
+  stroke: #FFFAF0;
 `;
 
 export const StyledSeaCan = styled(SeaCan)`
@@ -48,7 +48,7 @@ export const StyledSeaCan = styled(SeaCan)`
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
-  stroke: #fff;
+  stroke: #FFFAF0;
 `;
 export const StyledLargeGear = styled(Gear)`
   height: 5rem;

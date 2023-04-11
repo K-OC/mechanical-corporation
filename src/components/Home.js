@@ -12,7 +12,6 @@ const Wrapper = styled.div`
   padding: 2rem 2rem 0rem 0rem;
   max-width: 100%;
   width: 100%;
-  
 `;
 
 const TextCtn = styled.div`
@@ -58,20 +57,16 @@ const StyledCard = styled(Card)`
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-out, background-color .3s ease-out;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     background-color: rgb(46, 48, 145);
     ${StyledCardContent} {
-      color: #fff;
-      
+      color: #fffaf0;
     }
-    
   }
 `;
-
-
 
 const StyledCardMedia = styled(CardMedia)`
   display: flex;
@@ -83,9 +78,9 @@ const StyledCardMedia = styled(CardMedia)`
     transition: transform 0.3s ease-out;
   }
 
-  ${StyledCard}:hover & svg,&:active svg  {
+  ${StyledCard}:hover & svg,&:active svg {
     transform: rotate(90deg);
-    fill: #fff;
+    fill: #fffaf0;
   }
 `;
 
