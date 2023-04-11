@@ -35,7 +35,15 @@ const Contacts = () => {
     >
       <Typography
         variant="h4"
-        style={{width: "100%", textAlign:'center',  padding: '1rem', color: "#fff", fontWeight: "bold", marginBottom: "1rem", backgroundColor: "#2E3091" }}
+        style={{
+          width: "100%",
+          textAlign: "center",
+          padding: "1rem",
+          color: "#fff",
+          fontWeight: "bold",
+          marginBottom: "1rem",
+          backgroundColor: "#2E3091",
+        }}
       >
         Get in touch
       </Typography>
@@ -126,7 +134,7 @@ const Contacts = () => {
                 Buchans, NL A0H 1GO
               </Typography>
               <Link
-                href="mailto:rbrace@buchansmining.co"
+                href="mailto:r_brace@hotmail.com"
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -137,7 +145,7 @@ const Contacts = () => {
                 }}
               >
                 <StyledEmail style={{ marginRight: "0.5rem" }} />
-                rbrace@buchansmining.co
+                r_brace@hotmail.com
               </Link>
               <Link
                 href="tel:709-672-3080"

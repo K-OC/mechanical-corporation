@@ -3,23 +3,60 @@ import { ReactComponent as Email } from "./email-svgrepo-com.svg";
 import { ReactComponent as Phone } from "./phone-call-svgrepo-com.svg";
 import { ReactComponent as Gear } from "./gear.svg";
 import { ReactComponent as BulldozerExcavator } from "./bulldozer-excavator.svg";
-import { ReactComponent as DrillGearTools } from "./drill-gear-tools.svg";
 import { ReactComponent as Drill } from "./drill.svg";
 import { ReactComponent as HydraulicEnergy } from "./hydraulic-energy.svg";
 import { ReactComponent as LaserTurret } from "./laser-turret.svg";
 import { ReactComponent as LineBoring } from "./line-boring-drill.svg";
 import { ReactComponent as MachinePressIndustry } from "./machine-press-industry.svg";
 import { ReactComponent as PickupTruck } from "./pickup-truck.svg";
-import { ReactComponent as PrecisionWelding } from "./precision-welding.svg";
 import { ReactComponent as Weld } from "./weld.svg";
+import { ReactComponent as SeaCan } from "./SeaCan.svg";
+import { ReactComponent as DrillConsummable } from "./drill-consummable.svg";
+import { ReactComponent as Storage } from "./storage.svg";
+import {ReactComponent as DrillRig} from './drill-ground.svg'
 
+export const StyledStorage = styled(Storage)`
+  height: 4rem;
+  width: 4rem;
+  min-height: 1rem;
+  min-width: 1rem;
+  fill: rgb(46, 48, 145);
+  stroke: #fff;
+`;
+
+export const StyledDrillRig = styled(DrillRig)`
+  height: 4rem;
+  width: 4rem;
+  min-height: 1rem;
+  min-width: 1rem;
+  fill: rgb(46, 48, 145);
+  stroke: #fff;
+`;
+
+export const StyledDrillConsummable = styled(DrillConsummable)`
+  height: 4rem;
+  width: 4rem;
+  min-height: 1rem;
+  min-width: 1rem;
+  fill: rgb(46, 48, 145);
+  stroke: #fff;
+`;
+
+export const StyledSeaCan = styled(SeaCan)`
+  height: 4rem;
+  width: 4rem;
+  min-height: 1rem;
+  min-width: 1rem;
+  fill: rgb(46, 48, 145);
+  stroke: #fff;
+`;
 export const StyledLargeGear = styled(Gear)`
   height: 5rem;
   width: 5rem;
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
-`
+`;
 
 export const StyledBulletdozerExcavator = styled(BulldozerExcavator)`
   height: 3rem;
@@ -28,13 +65,7 @@ export const StyledBulletdozerExcavator = styled(BulldozerExcavator)`
   min-width: 1rem;
   fill: rgb(46, 48, 145);
 `;
-export const StyledDrillGearTools = styled(DrillGearTools)`
-  height: 3rem;
-  width: 3rem;
-  min-height: 1rem;
-  min-width: 1rem;
-  fill: rgb(46, 48, 145);
-`;
+
 export const StyledDrill = styled(Drill)`
   height: 3rem;
   width: 3rem;
@@ -43,8 +74,8 @@ export const StyledDrill = styled(Drill)`
   fill: rgb(46, 48, 145);
 `;
 export const StyledHydraulicEnergy = styled(HydraulicEnergy)`
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
@@ -78,13 +109,7 @@ export const StyledPickupTruck = styled(PickupTruck)`
   min-width: 1rem;
   fill: rgb(46, 48, 145);
 `;
-export const StyledPrecisionWelding = styled(PrecisionWelding)`
-  height: 3rem;
-  width: 3rem;
-  min-height: 1rem;
-  min-width: 1rem;
-  fill: rgb(46, 48, 145);
-`;
+
 export const StyledWeld = styled(Weld)`
   height: 3rem;
   width: 3rem;

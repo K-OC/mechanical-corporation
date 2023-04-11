@@ -142,9 +142,9 @@ const AboutUs = () => {
               <ContentCardTitle>Values</ContentCardTitle>
             </ContentTitleCtn>
           </AccordionSummary>
-          <ContentCardParaCtn>
-            <List>
-              <ListItem>
+          <ContentCardParaCtn >
+            <List >
+              <ListItem >
                 <ListItemText primary="Integrity" />
               </ListItem>
               <ListItem>

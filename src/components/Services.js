@@ -3,35 +3,42 @@ import {
   StyledBulletdozerExcavator,
   StyledDrill,
   StyledHydraulicEnergy,
-  StyledDrillGearTools,
   StyledPickupTruck,
   StyledLaserTurret,
   StyledWeld,
   StyledLineBoring,
   StyledMachinePressIndustry,
-  StyledPrecisionWelding,
+  StyledSeaCan,
+  StyledDrillConsummable,
+  StyledStorage,StyledDrillRig
 } from "../Custom-Icons/CustomIcons";
 
 const services = [
   {
     name: "Bit sharpening",
     icon: <StyledDrill />,
-  },
+  }, {
+    name: "Welding and Fabrication",
+    icon: <StyledWeld />,
+  }, 
   {
     name: "Bucket Rebuilds",
     icon: <StyledBulletdozerExcavator />,
   },
   {
     name: "Drill Consumable Products",
-    icon: <StyledDrillGearTools />,
+    icon: <StyledDrillConsummable />,
   },
   {
     name: "Drill Hammer Rebuilds",
-    icon: <StyledPrecisionWelding />,
+    icon: <StyledDrillRig/>
   },
   {
     name: "Hydraulic Hoses & Fittings",
     icon: <StyledHydraulicEnergy />,
+  },{
+    name: "Sea Can Modifications",
+    icon: <StyledSeaCan />,
   },
   {
     name: "Laser Alignment",
@@ -53,9 +60,9 @@ const services = [
     name: "Truck Box Liners (Hardox)",
     icon: <StyledPickupTruck />,
   },
-  {
-    name: "Welding and Fabrication",
-    icon: <StyledWeld />,
+ {
+    name: "Indoor / Outdoor Storage",
+    icon: <StyledStorage/>,
   },
 ];
 
@@ -95,7 +102,7 @@ const Services = () => {
                   alignItems: "center",
                   overflow: "auto",
                   justifyContent: "center",
-                  padding: "1rem",
+                  padding: ".5rem",
                   textAlign: "center",
                 }}
               >
