@@ -72,6 +72,22 @@ const services = [
 const Services = () => {
   return (
     <Box sx={{ mb: 10, mt: 3 }}>
+            <Typography
+        variant="h4"
+        gutterBottom
+        textAlign="center"
+        style={{
+          padding: "1rem",
+
+          color: "#FFFAF0",
+          fontWeight: "bold",
+          marginTop: "2rem",
+          backgroundColor: "#2E3091",
+          width: "100%",
+        }}
+      >
+        Our Equipment
+      </Typography>
       <Grid
         container
         spacing={1}
