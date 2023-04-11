@@ -19,7 +19,7 @@ const Wrapper = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   marginTop: "2rem",
-  opacity:'0.9',
+  opacity: "0.9",
   justifyContent: "start",
 });
 
@@ -143,26 +143,43 @@ const AboutUs = () => {
               <ContentCardTitle>Values</ContentCardTitle>
             </ContentTitleCtn>
           </AccordionSummary>
-          <ContentCardParaCtn >
-            <List >
+          <ContentCardParaCtn>
+            <List>
               <ListItem>
-                <ListItemText primary="Integrity"     primaryTypographyProps={{fontWeight:'bold'}} 
-/>
+                <ListItemText
+                  primary="Integrity"
+                  primaryTypographyProps={{ fontWeight: "bold" }}
+                />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Commitment to Excellence" />
+                <ListItemText
+                  primary="Commitment to Excellence"
+                  primaryTypographyProps={{ fontWeight: "bold" }}
+                />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Safety" />
+                <ListItemText
+                  primary="Safety"
+                  primaryTypographyProps={{ fontWeight: "bold" }}
+                />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Innovation" />
+                <ListItemText
+                  primary="Innovation"
+                  primaryTypographyProps={{ fontWeight: "bold" }}
+                />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Teamwork" />
+                <ListItemText
+                  primary="Teamwork"
+                  primaryTypographyProps={{ fontWeight: "bold" }}
+                />
               </ListItem>
               <ListItem>
-                <ListItemText primary="Community" />
+                <ListItemText
+                  primary="Community"
+                  primaryTypographyProps={{ fontWeight: "bold" }}
+                />
               </ListItem>
             </List>
           </ContentCardParaCtn>
