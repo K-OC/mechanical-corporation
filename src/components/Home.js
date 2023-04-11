@@ -31,7 +31,16 @@ const OptionsCtn = styled.div`
   flex-wrap: wrap;
   max-width: 100%;
 `;
-
+const StyledCardContent = styled(CardContent)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(46, 48, 145);
+  font-weight: bold;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+`;
 const StyledCard = styled(Card)`
   position: relative;
   width: 100%;
@@ -52,19 +61,16 @@ const StyledCard = styled(Card)`
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background-color: rgb(46, 48, 145);
+    ${StyledCardContent} {
+      color: #fff;
+      
+    }
+    
   }
 `;
 
-const StyledCardContent = styled(CardContent)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(46, 48, 145);
-  font-weight: bold;
-  justify-content: center;
-  gap: 0.5rem;
-  text-align: center;
-`;
+
 
 const StyledCardMedia = styled(CardMedia)`
   display: flex;
@@ -78,6 +84,7 @@ const StyledCardMedia = styled(CardMedia)`
 
   ${StyledCard}:hover & svg,&:active svg  {
     transform: rotate(90deg);
+    fill: #fff;
   }
 `;
 

@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   position: relative;
   background-color: #fff;
   width: 100%;
-  min-height: calc(100vh - 5.5rem - 5.5rem); /* Subtract header and footer heights from viewport height */
+  min-height: calc(100vh - 5.5rem ); /* Subtract header and footer heights from viewport height */
   background: url(${gearphoto});
   background-repeat: no-repeat;
   background-size: 100%;
