@@ -19,6 +19,7 @@ const Wrapper = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   marginTop: "2rem",
+  opacity:'0.9',
   justifyContent: "start",
 });
 
@@ -144,8 +145,9 @@ const AboutUs = () => {
           </AccordionSummary>
           <ContentCardParaCtn >
             <List >
-              <ListItem >
-                <ListItemText primary="Integrity" />
+              <ListItem>
+                <ListItemText primary="Integrity"     primaryTypographyProps={{fontWeight:'bold'}} 
+/>
               </ListItem>
               <ListItem>
                 <ListItemText primary="Commitment to Excellence" />
