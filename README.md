@@ -1,2 +1,2 @@
-# Website for the Beothuk Mechanical Corporation
-[beothukmechanical.com](https://beothukmechanical.com)
+# Website for the Mechanical Corporation
+[mechanical corporation](https://beothukmechanical.com)
