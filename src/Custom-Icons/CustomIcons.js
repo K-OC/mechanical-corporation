@@ -13,7 +13,24 @@ import { ReactComponent as Weld } from "./weld.svg";
 import { ReactComponent as SeaCan } from "./SeaCan.svg";
 import { ReactComponent as DrillConsummable } from "./drill-consummable.svg";
 import { ReactComponent as Storage } from "./storage.svg";
-import {ReactComponent as DrillRig} from './drill-ground.svg'
+import { ReactComponent as DrillRig } from "./drill-ground.svg";
+
+export const DrillSmall = styled(Drill)`
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #fffaf0;
+`;
+export const PhoneSmall = styled(Phone)`
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #fffaf0;
+`;
+export const StyledGearSmall = styled(Gear)`
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: none;
+  stroke: #fffaf0;
+`;
 
 export const StyledStorage = styled(Storage)`
   height: 4rem;
@@ -21,7 +38,7 @@ export const StyledStorage = styled(Storage)`
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
-  stroke: #FFFAF0;
+  stroke: #fffaf0;
 `;
 
 export const StyledDrillRig = styled(DrillRig)`
@@ -30,7 +47,7 @@ export const StyledDrillRig = styled(DrillRig)`
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
-  stroke: #FFFAF0;
+  stroke: #fffaf0;
 `;
 
 export const StyledDrillConsummable = styled(DrillConsummable)`
@@ -39,7 +56,7 @@ export const StyledDrillConsummable = styled(DrillConsummable)`
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
-  stroke: #FFFAF0;
+  stroke: #fffaf0;
 `;
 
 export const StyledSeaCan = styled(SeaCan)`
@@ -48,7 +65,7 @@ export const StyledSeaCan = styled(SeaCan)`
   min-height: 1rem;
   min-width: 1rem;
   fill: rgb(46, 48, 145);
-  stroke: #FFFAF0;
+  stroke: #fffaf0;
 `;
 export const StyledLargeGear = styled(Gear)`
   height: 5rem;

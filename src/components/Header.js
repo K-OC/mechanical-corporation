@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Dropdown from "./Dropdown";
+import { StyledGearSmall, DrillSmall, PhoneSmall } from "../Custom-Icons/CustomIcons";
 const Wrapper = styled.div`
   display: flex;
   position: relative;
   width: 100%;
   max-width: 100%;
   background-color: rgb(46, 48, 145);
-  /* height: 5.5rem; */
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
@@ -27,6 +28,7 @@ const Logo = styled.img`
 const HeaderItemCtn = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const NavbarLink = styled(Link)`
@@ -43,15 +45,22 @@ const HeaderItem = styled.button`
   @media (max-width: 380px) {
     font-size: 0.8rem;
   }
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 const Header = () => {
+  const menuArr = [{'title': 'Equipment', 'src': <DrillSmall/>},{'title': 'Services', 'src': <StyledGearSmall/>}, {'title': 'Contact', 'src': <PhoneSmall/>}];
   return (
     <Wrapper>
       <Link to="/">
         <Logo src="./assets/bmechlogo.png" />
       </Link>
+
       <HeaderItemCtn>
+        <Dropdown content={menuArr} />
+
         <HeaderItem>
           <NavbarLink to="equipment">Equipment</NavbarLink>
         </HeaderItem>
