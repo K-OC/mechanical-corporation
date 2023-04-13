@@ -128,7 +128,7 @@ const Dropdown = ({ content }) => {
         <NavMenu open={navMenuClicked}>
           {content.map((listItem) => {
             return (
-              <NavItem to={`/${listItem.title}`} key={listItem + 1}>
+              <NavItem to={`/${listItem.title.toLowerCase()}`} key={listItem + 1}>
                 {listItem.title} {listItem.src}
               </NavItem>
             );
