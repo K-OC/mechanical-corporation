@@ -72,7 +72,7 @@ const services = [
 const Services = () => {
   return (
     <Box sx={{ mb: 10, mt: 3 }}>
-            <Typography
+      <Typography
         variant="h4"
         gutterBottom
         textAlign="center"
@@ -86,7 +86,7 @@ const Services = () => {
           width: "100%",
         }}
       >
-        Our Equipment
+        Our Services
       </Typography>
       <Grid
         container
