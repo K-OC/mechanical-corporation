@@ -12,6 +12,7 @@ const FooterItemCtn = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-top: 0.5rem;
+  font-size: 1.3rem;
 `;
 
 const StyledLink = styled(Link)`

@@ -2,7 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
-import { StyledGearSmall, DrillSmall, PhoneSmall } from "../Custom-Icons/CustomIcons";
+import {
+  StyledGearSmall,
+  DrillSmall,
+  PhoneSmall,
+} from "../Custom-Icons/CustomIcons";
 const Wrapper = styled.div`
   display: flex;
   position: relative;
@@ -34,14 +38,18 @@ const HeaderItemCtn = styled.div`
 const NavbarLink = styled(Link)`
   text-decoration: none;
   color: #fffaf0;
+  &:hover {
+    color: yellow;
+  }
 `;
 
 const HeaderItem = styled.button`
   height: fit-content;
   border: none;
   background-color: transparent;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #fffaf0;
+  padding: 0 1rem;
   @media (max-width: 380px) {
     font-size: 0.8rem;
   }
@@ -51,7 +59,11 @@ const HeaderItem = styled.button`
 `;
 
 const Header = () => {
-  const menuArr = [{'title': 'Equipment', 'src': <DrillSmall/>},{'title': 'Services', 'src': <StyledGearSmall/>}, {'title': 'Contact', 'src': <PhoneSmall/>}];
+  const menuArr = [
+    { title: "Equipment", src: <DrillSmall /> },
+    { title: "Services", src: <StyledGearSmall /> },
+    { title: "Contact", src: <PhoneSmall /> },
+  ];
   return (
     <Wrapper>
       <Link to="/">

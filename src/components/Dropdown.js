@@ -49,7 +49,7 @@ const NavMenu = styled.div`
   top: calc(100% + 0rem);
   right: 0;
   display: flex;
-  width: 9rem;
+  min-width: 10rem;
   font-size: 1.1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   flex-direction: column;
@@ -58,7 +58,7 @@ const NavMenu = styled.div`
   justify-content: center;
   align-items: center;
   text-align: left;
-
+  padding: 0 1rem 0 1rem;
   @media (max-width: 768px) {
     margin-right: 0;
   }
@@ -76,7 +76,7 @@ const NavItem = styled(Link)`
   align-items: center;
   width: 100%;
   text-decoration: none;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   font-weight: bold;
   white-space: nowrap;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -84,13 +84,25 @@ const NavItem = styled(Link)`
   background-color: rgb(46, 48, 145);
   border: 1px solid rgb(46, 48, 145);
   color: #fffaf0;
-
+  padding: 1rem 1.5rem;
   cursor: pointer;
+  transition: all 0.3s ease;
+
   svg {
     position: absolute;
     fill: #fffaf0;
     right: 0rem;
     padding-right: 0.5rem;
+  }
+
+  &:hover {
+    background-color: rgb(58, 61, 173); /* Slightly lighter shade */
+    border-color: rgb(58, 61, 173);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.3) 0px 2px 4px;
+    color: yellow;
+    svg {
+      fill: yellow;
+    }
   }
 
   &:active {
@@ -128,7 +140,10 @@ const Dropdown = ({ content }) => {
         <NavMenu open={navMenuClicked}>
           {content.map((listItem) => {
             return (
-              <NavItem to={`/${listItem.title.toLowerCase()}`} key={listItem + 1}>
+              <NavItem
+                to={`/${listItem.title.toLowerCase()}`}
+                key={listItem + 1}
+              >
                 {listItem.title} {listItem.src}
               </NavItem>
             );
