@@ -20,7 +20,21 @@ const TextCtn = styled.div`
   font-weight: bold;
   margin-bottom: 1rem;
   color: rgb(46, 48, 145);
-  /* padding: 0 2rem; */
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 1rem;
+      padding: 0 0.5rem;
+    }
+  }
 `;
 
 const OptionsCtn = styled.div`
@@ -52,7 +66,7 @@ const StyledCard = styled(Card)`
   color: rgb(46, 48, 145);
   font-weight: bold;
   justify-content: center;
-  opacity: 0.9;
+
   align-items: center;
   border-radius: 12px;
   overflow: hidden;
@@ -62,6 +76,7 @@ const StyledCard = styled(Card)`
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     background-color: rgb(46, 48, 145);
+    opacity: 0.9;
     ${StyledCardContent} {
       color: #fffaf0;
     }
@@ -89,9 +104,9 @@ const Home = () => {
     <Wrapper>
       <TextCtn>
         <h3>
-          Beothuk Mechanical Corporation, in Buchans, has an 8000 sq ft facility
-          operating as a fully equipped machining, welding & fabrication shop
-          that specializes in custom machining and fabrication production.
+          BMC is located in Buchans NL. Our 8000 sq ft facility is a fully
+          equipped machining, welding, and fabrication shop, specializing in
+          custom production.
         </h3>
       </TextCtn>
       <OptionsCtn>
@@ -132,7 +147,7 @@ const Home = () => {
               About
             </Typography>
             <Typography variant="body2">
-              Our Misson, Vision, and Values.
+              Our Mission, Vision, and Values.
             </Typography>
           </StyledCardContent>
         </StyledCard>
