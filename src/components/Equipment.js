@@ -48,11 +48,6 @@ const cardData = [
     alt: "Image of Bit Sharpener",
   },
   {
-    title: "Line Boring Tool",
-    image: LineBoringTool,
-    alt: "Image of Line Boring Tool",
-  },
-  {
     title: "Shear Machine",
     image: ShearMachine,
     alt: "Image of Shear Machine",
@@ -61,11 +56,6 @@ const cardData = [
     title: "Universal Milling Machine",
     image: universalMillingMachine,
     alt: "Image of Universal Milling Machine",
-  },
-  {
-    title: "Hydraulic Bending Rolls",
-    image: hydraulicBendingRolls,
-    alt: "Image of Hydraulic Bending Rolls",
   },
   { title: "Lathe", image: lathe, alt: "Image of Lathe" },
   {
