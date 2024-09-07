@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "beothukmechanical.com",
+  "Id": "fb61351f-3e5c-4d76-ae19-44343a792a6a"
+}
