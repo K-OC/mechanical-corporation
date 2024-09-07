@@ -1,10 +1,8 @@
 import { Grid, Card, CardMedia, CardContent, Typography } from "@mui/material";
 import styled from "styled-components";
 import BitSharpener from "../assets/IMG_1511.jpg";
-import LineBoringTool from "../assets/IMG_1510.jpg";
 import ShearMachine from "../assets/IMG-6737.jpg";
 import universalMillingMachine from "../assets/universal-milling-machine.png";
-import hydraulicBendingRolls from "../assets/IMG-6771.jpg";
 import lathe from "../assets/IMG-6755.jpg";
 import turningCenter from "../assets/IMG-6773.jpg";
 import radialDrill from "../assets/radial-drill.jpg";
