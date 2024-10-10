@@ -137,7 +137,7 @@ const Contacts = () => {
                 Buchans, NL A0H 1GO
               </Typography>
               <Link
-                href="mailto:r_brace@hotmail.com"
+                href="mailto:rickbrace@beothukmechanical.com"
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -148,8 +148,8 @@ const Contacts = () => {
                 }}
               >
                 <StyledEmail style={{ marginRight: "0.5rem" }} />
-                r_brace@hotmail.com
-              </Link>
+                rickbrace@beothukmechanical.com
+                </Link>
               <Link
                 href="tel:709-672-3080"
                 style={{
