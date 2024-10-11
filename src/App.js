@@ -7,7 +7,6 @@ import Contacts from "./components/Contacts";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
-import gearphoto from "./assets/gearphoto.png";
 import Equipment from "./components/Equipment";
 import Services from "./components/Services";
 import './App.css';
