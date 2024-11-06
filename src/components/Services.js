@@ -1,7 +1,6 @@
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 import {
   StyledDrill,
-  StyledHydraulicEnergy,
   StyledSeaCan,
   StyledDrillConsummable,
   StyledStorage,
@@ -23,10 +22,6 @@ const services = [
     icon: <StyledDrillRig />,
   },
   {
-    name: "Hydraulic Hoses & Fittings",
-    icon: <StyledHydraulicEnergy />,
-  },
-  {
     name: "Sea Can Modifications",
     icon: <StyledSeaCan />,
   },
@@ -35,7 +30,7 @@ const services = [
     icon: <StyledStorage />,
   },
   {
-  name: "Wear Serices", 
+  name: "Wear Services", 
   icon: <StyledBulletdozerExcavator/>
   }
 ];
