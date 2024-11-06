@@ -6,7 +6,8 @@ import universalMillingMachine from "../assets/universal-milling-machine.png";
 import lathe from "../assets/IMG-6755.jpg";
 import turningCenter from "../assets/IMG-6773.jpg";
 import radialDrill from "../assets/radial-drill.jpg";
-
+import komatsu from "../assets/komatsu.jpeg";
+import kenworth from "../assets/big-truck2.jpeg";
 const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -62,6 +63,16 @@ const cardData = [
     alt: "Image of Turning Center",
   },
   { title: "Radial Drill", image: radialDrill, alt: "Image of Radial Drill" },
+  {
+    title: "Komatsu 6-Wheel Loader",
+    image: komatsu,
+    alt: "Image of Komatsu 6-Wheel Loader",
+  },
+  {
+    title: "Kenworth T370 Semi",
+    image: kenworth,
+    alt: "Image of Kenworth T370",
+  },
 ];
 
 const Equipment = () => {
